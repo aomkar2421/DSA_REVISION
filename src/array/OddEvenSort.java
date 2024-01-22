@@ -1,22 +1,20 @@
 package array;
 
-public class Sort0and1_2 {
+public class OddEvenSort {
 	public static void main(String[] args) {
-
-		int [] arr = {0,0,1,1,0,1,0,1,1,0,1,0,1};
-		printArray(arr);
-
+		int [] arr= {67,98,65,54,34,21,78,90,88,77};
+		
 		int temp;
 		int i = 0;
 		int j=arr.length-1;
 
 		while (i <= j) {
-			if (arr[i]==0) {
+			if (arr[i]%2==0) {
 				i++;
 			} 
-			else if (arr[j]==1) {
+			else if (arr[j]%2!=0) {
 				j--;
-			}
+			} 
 			else {
 				temp = arr[i];
 				arr[i] = arr[j];
@@ -35,5 +33,5 @@ public class Sort0and1_2 {
 			System.out.print(arr[i]+" ");
 		}
 		System.out.println();
-	}	
-}		
+	}
+}
