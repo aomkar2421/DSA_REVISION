@@ -1,5 +1,5 @@
 package array;
-
+	
 public class AddArrays {
 	public static void main(String[] args) {
 		int [] arr1 = {12,34,56,76};
@@ -12,7 +12,7 @@ public class AddArrays {
 			max = arr2.length;
 		}
 		int [] sum = new int[max];
-
+		
 		for (int i = 0; i < max; i++) {
 			int a = (arr1.length > i) ? arr1[i] : 0 ;
 			int b = (arr2.length > i) ? arr2[i] : 0 ;
@@ -22,4 +22,5 @@ public class AddArrays {
 		Printa.print(sum);
 		
 	}
-}
+}	
+	
