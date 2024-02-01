@@ -28,6 +28,8 @@ public class Sort_012 {
 				arr[mid] = temp;
 				high--;
 				mid++;
+				
+				
 			}
 			
 		}
