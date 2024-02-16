@@ -1,26 +1,21 @@
 package sorting;
-			
+
+import lc.Printa;
+
 public class Insertion {
 	public static void main(String[] args) {
-			
-		int arr [] = {76,12,90,78,43,9,21};
-		int temp , j;
-			
+		int [] arr = {8, 3, 6, 2, 4, 5};
+		
 		for (int i = 1; i < arr.length; i++) {
-			temp = arr[i];
-			j = i;
-			
-			while (j> 0 && arr[j-1]>temp) {
-				arr[j] = arr[j-1];
-				j = j-1;
+			int j = i;
+			while (j>0 && arr[j-1] > arr[j]) {
+				int temp = arr[j-1];
+				arr[j-1] = arr[j];
+				arr[j] = temp;
+				j--;
 			}
-			arr[j] = temp;
-		}	
-			
-		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i]+" ");
-		}	
-			
-	}		
+		}
+		Printa.print(arr);
+	}
 }			
 			
