@@ -15,5 +15,6 @@ public class Power {
 		int smallAns = calcPower(p, q-1);
 		int ans = p * smallAns;
 		return ans;
+		
 	}
 }
