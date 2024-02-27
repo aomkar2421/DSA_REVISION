@@ -7,11 +7,11 @@ public class JumpGame {
 		
 		int finalPosition = arr.length-1;
 		
-		for (int i = arr.length-1; i >= 0; i--) {
-			if (i+arr[i] >= finalPosition) {
+		for (int i = arr.length-2; i>=0; i--) {
+			if(i+arr[i] >= finalPosition) {
 				finalPosition = i;
 			}
 		}
-			System.out.println(finalPosition);
+		System.out.println(finalPosition);
 	}	
 }		
