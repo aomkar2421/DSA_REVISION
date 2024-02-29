@@ -6,6 +6,7 @@ public class FibonacciNTerms {
 		for (int i = 0; i <= 10; i++) {
 			System.out.println(fib(i));
 		}
+		
 	}
 
 	private static int fib(int n) {
