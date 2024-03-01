@@ -10,32 +10,37 @@ public class Spiral {
         int topRow = 0;
         int bottomRow = arr.length-1;
         int leftColumn = 0;
-        int rightColumn = arr[0].length;
+        int rightColumn = arr[0].length-1;
+        int totalElements = 0;
+        int row = arr.length;
+        int column = arr[0].length;
 
+        System.out.println("SPIRAL\n");
         
-        while (1==1) {
-			
-        	for (int i = leftColumn; i < rightColumn; i++) {
-				System.out.println(arr[topRow][i]);
+        while (totalElements < row * column) {
+        	for (int i = leftColumn; i <= rightColumn; i++) {
+				System.out.print(arr[topRow][i]+" ");
+				totalElements++;
 			}
+        	topRow++;
         	
-        	for (int i = topRow; i < bottomRow; i++) {
-				System.out.println(arr[i][rightColumn]);
+        	for (int i = topRow; i <= bottomRow; i++) {
+				System.out.print(arr[i][rightColumn]+" ");
+				totalElements++;
 			}
+        	rightColumn--;
         	
-        	for (int i = rightColumn; i < leftColumn; i--) {
-				System.out.println(arr[bottomRow][i]);
+        	for (int i = rightColumn; i >= leftColumn; i--) {
+				System.out.print(arr[bottomRow][i]+" ");
+				totalElements++;
 			}
+        	bottomRow--;
         	
-        	for (int i = leftColumn; i < rightColumn; i++) {
-				System.out.println(arr[bottomRow][i]);
+        	for (int i = bottomRow; i >= topRow; i--) {
+				System.out.print(arr[i][leftColumn]+" ");
+				totalElements++;
 			}
-        	
-        	for (int i = leftColumn; i < rightColumn; i++) {
-				System.out.println(arr[0][i]);
-			}
-        	
-        	
+        	leftColumn++;
 		}
 		
 	}
