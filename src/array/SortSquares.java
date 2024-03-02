@@ -3,7 +3,7 @@ package array;
 public class SortSquares {
 	public static void main(String[] args) {
 		
-		int [] arr = {-10,-5,-2,1,4,7,9};
+		int [] arr = {-4,-1,0,3,10};
 		int [] ans = new int[arr.length];
 		
 		int j = arr.length-1;
