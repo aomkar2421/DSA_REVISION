@@ -11,8 +11,10 @@ public class KMultiples {
 		if(k == 1) {
 			return 1;
 		}
+		
 		int smallAns = multiples(n, k-1);
 		int ans = n * smallAns;
+		
 		return ans;
 	}
 }
