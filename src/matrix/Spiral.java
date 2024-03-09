@@ -6,8 +6,11 @@ public class Spiral {
         int[][] arr = {{11,12,13,14,15}, {16,17,18,19,20}, {21,22,23,24,25}, {26,27,28,29,30}, {31,32,33,34,35}, };
 
         Print.printArray(arr);
-        
-        int topRow = 0;
+        printSpiral(arr);
+		
+	}
+	static void printSpiral(int [][] arr) {
+		int topRow = 0;
         int bottomRow = arr.length-1;
         int leftColumn = 0;
         int rightColumn = arr[0].length-1;
@@ -42,6 +45,5 @@ public class Spiral {
 			}
         	leftColumn++;
 		}
-		
 	}
 }
