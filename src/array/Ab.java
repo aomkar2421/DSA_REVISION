@@ -2,6 +2,7 @@ package array;
 
 public class Ab {
 	public static void main(String[] args) {
+		
 		int a = 6;
 		if (a==0) {
 			System.out.println(1);
