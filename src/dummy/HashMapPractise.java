@@ -3,6 +3,7 @@ package dummy;
 import java.util.HashMap;
 
 public class HashMapPractise {
+	
 	public static void main(String[] args) {
 		
 		HashMap<Integer, Integer> hm = new HashMap();
@@ -11,5 +12,6 @@ public class HashMapPractise {
 			hm.put(i, arr[i]);
 		}
 		System.out.println(hm);
+		
 	}
 }
